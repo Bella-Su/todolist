@@ -14,7 +14,7 @@ app.use(express.urlencoded({extended: true}));
 app.use(express.static("public"));
 
 //connect to the mongodb
-mongoose.connect("mongodb+srv://admin-bella:Maonu413@cluster0.xiuj9.mongodb.net/todolistDB",{useNewUrlParser: true, useUnifiedTopology: true});
+mongoose.connect("DB_URI",{useNewUrlParser: true, useUnifiedTopology: true});
 
 
 //**********item Schema and its model********//
